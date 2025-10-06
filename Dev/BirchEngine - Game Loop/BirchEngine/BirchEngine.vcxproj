@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CE353F93-BF7C-4368-BE55-A8C0FAF6E793}</ProjectGuid>
+    <RootNamespace>BirchEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Libraries\SDL2_ttf\include;C:\Libraries\SDL_image\include;$(ProjectDir);C:\Libraries\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\SDL2_ttf\lib\x64;C:\Libraries\SDL2_image\lib\x64;C:\Libraries\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Libraries\SDL2_ttf\include;C:\Libraries\SDL_image\include;$(ProjectDir);C:\Libraries\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libraries\SDL2_ttf\lib\x64;C:\Libraries\SDL2_image\lib\x64;C:\Libraries\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Dev\BirchEngine\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Libraries\SDL2_ttf\include;C:\Libraries\SDL2_image\include;C:\Libraries\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Libraries\SDL2_ttf\lib\x64;C:\Libraries\SDL2_image\lib\x64;C:\Libraries\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2_ttf.lib;SDL2_image.lib;SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Dev\BirchEngine\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Libraries\SDL2_ttf\include;C:\Libraries\SDL2_image\include;C:\Libraries\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Libraries\SDL2_ttf\lib\x64;C:\Libraries\SDL2_image\lib\x64;C:\Libraries\SDL2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2_ttf.lib;SDL2_image.lib;SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\ECS\ECS.cpp" />
+    <ClCompile Include="Src\ECS\SpriteComponent.cpp" />
+    <ClCompile Include="Src\Engine\Buckets\RenderBuckets.cpp" />
+    <ClCompile Include="Src\Game Management\GameTime.cpp" />
+    <ClCompile Include="Src\Game Management\ObjectManagers\AssetManager.cpp" />
+    <ClCompile Include="Src\Gameplay\AbilityStuff\Abilities.cpp" />
+    <ClCompile Include="Src\ECS\ComponentLibraries\CollisionMethods.cpp" />
+    <ClCompile Include="Src\ECS\InputController.cpp" />
+    <ClCompile Include="Src\ECS\InteractableComponent.cpp" />
+    <ClCompile Include="Src\ECS\LineComponent.hpp" />
+    <ClCompile Include="Src\Gameplay\Game Systems\CollisionHandler.cpp" />
+    <ClCompile Include="Src\Utils\NodePubSub.cpp" />
+    <ClCompile Include="Src\ECS\ResourcesComponent.hpp" />
+    <ClCompile Include="Src\ECS\SpatialComponent.cpp" />
+    <ClCompile Include="Src\Gameplay\ItemStuff\ItemEntity.cpp" />
+    <ClCompile Include="Src\Gameplay\Game Systems\GameEvents.cpp" />
+    <ClCompile Include="Src\Gameplay\AbilityStuff\StandardAbilities.cpp" />
+    <ClCompile Include="Src\Gameplay\CreatureStuff\Condition.cpp" />
+    <ClCompile Include="Src\Gameplay\CreatureStuff\Condition.hpp" />
+    <ClCompile Include="Src\Game Management\Game.cpp" />
+    <ClCompile Include="Src\Gameplay\CreatureStuff\Behaviour.hpp" />
+    <ClCompile Include="Src\Gameplay\Game Systems\EnemySpawnManager.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\Gameplay\WorldStuff\Map.cpp" />
+    <ClCompile Include="Src\Gameplay\UserInterface\FloatingTextEntity.hpp" />
+    <ClCompile Include="Src\Game Management\TextureManager.cpp" />
+    <ClCompile Include="Src\Utils\Timer.cpp" />
+    <ClCompile Include="Src\Utils\Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Archive\RenderBucketArray.hpp" />
+    <ClInclude Include="Src\ECS\ComponentLibraries\CollisionMethods.hpp" />
+    <ClInclude Include="Src\ECS\UIComponent.hpp" />
+    <ClInclude Include="Src\ECS\CustomFuncComponent.hpp" />
+    <ClInclude Include="Src\ECS\ECS.hpp" />
+    <ClInclude Include="Src\ECS\GCST.hpp" />
+    <ClInclude Include="Src\ECS\ScrollableComponent.hpp" />
+    <ClInclude Include="Src\Engine\Buckets\RenderBuckets.hpp" />
+    <ClInclude Include="Src\Engine\EntityManagementConstants.hpp" />
+    <ClInclude Include="Src\Game Management\GameTime.hpp" />
+    <ClInclude Include="Src\Game Management\ObjectManagers\AssetManager.hpp" />
+    <ClInclude Include="Src\Gameplay\Game Systems\CollisionHandler.hpp" />
+    <ClInclude Include="Src\Gameplay\Game Systems\EntityGroups.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\EntitySpawnMenu.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\InterfaceData\Layouts.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\Panel.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\ScrollableList.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\InterfaceData\UI_Element_Info.hpp" />
+    <ClInclude Include="Src\Utils\NodePubSub.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\LogBox.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\InventoryWindow.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\ResourceBarEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\AbilityStuff\AttackStats.hpp" />
+    <ClInclude Include="Src\Game Management\ObjectManagement.hpp" />
+    <ClInclude Include="Src\Utils\Camera.hpp" />
+    <ClInclude Include="Src\Gameplay\AbilityStuff\Abilities.hpp" />
+    <ClInclude Include="Src\ECS\GameEventListener.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\HotbarEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\ItemSlotEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\Game Systems\GameEvents.hpp" />
+    <ClInclude Include="Src\Gameplay\AbilityStuff\StandardAbilities.hpp" />
+    <ClInclude Include="Src\Gameplay\ItemStuff\Inventory.hpp" />
+    <ClInclude Include="Src\ECS\ButtonComponent.hpp" />
+    <ClInclude Include="Src\ECS\ColliderComponent.hpp" />
+    <ClInclude Include="Src\ECS\components.hpp" />
+    <ClInclude Include="Src\ECS\ContainerComponent.hpp" />
+    <ClInclude Include="Src\ECS\CustomDataStructureComponent.hpp" />
+    <ClInclude Include="Src\ECS\DurationComponent.hpp" />
+    <ClInclude Include="Src\ECS\FadeAwayComponent.hpp" />
+    <ClInclude Include="Src\ECS\InputController.hpp" />
+    <ClInclude Include="Src\ECS\InteractableComponent.hpp" />
+    <ClInclude Include="Src\ECS\LinkComponent.hpp" />
+    <ClInclude Include="Src\ECS\MovementComponent.hpp" />
+    <ClInclude Include="Src\ECS\BadComponents\OutlineComponent.hpp" />
+    <ClInclude Include="Src\ECS\ProjectileComponent.hpp" />
+    <ClInclude Include="Src\ECS\AIComponent.hpp" />
+    <ClInclude Include="Src\ECS\SpatialComponent.hpp" />
+    <ClInclude Include="Src\ECS\TextComponent.hpp" />
+    <ClInclude Include="Src\ECS\TrackerComponent.hpp" />
+    <ClInclude Include="Src\ECS\SpriteComponent.hpp" />
+    <ClInclude Include="Src\ECS\TrailComponent.hpp" />
+    <ClInclude Include="Src\Gameplay\CreatureStuff\LimitedResource.hpp" />
+    <ClInclude Include="Src\Gameplay\Game Systems\EnemySpawnManager.hpp" />
+    <ClInclude Include="Src\Game Management\Game.hpp" />
+    <ClInclude Include="Src\Gameplay\ItemStuff\Item.hpp" />
+    <ClInclude Include="Src\Gameplay\WorldStuff\Map.hpp" />
+    <ClInclude Include="Src\Gameplay\AbilityStuff\Entities\SlashEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\CreatureStuff\Instances\CreatureEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\CreatureStuff\Instances\Enemy.hpp" />
+    <ClInclude Include="Src\Gameplay\Entities.hpp" />
+    <ClInclude Include="Src\Gameplay\ItemStuff\ItemEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\CreatureStuff\Instances\Player.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\PopupBox.hpp" />
+    <ClInclude Include="Src\Gameplay\AbilityStuff\Entities\ProjectileEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\SimpleButton.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\FallingText.hpp" />
+    <ClInclude Include="Src\Gameplay\WorldStuff\TileEntity.hpp" />
+    <ClInclude Include="Src\Gameplay\UserInterface\WindowEntity.hpp" />
+    <ClInclude Include="Src\Game Management\Scene.hpp" />
+    <ClInclude Include="Src\Utils\Timer.hpp" />
+    <ClInclude Include="Src\Utils\utils_SDL.hpp" />
+    <ClInclude Include="Src\Gameplay\CreatureStuff\StatsAndModifiers.hpp" />
+    <ClInclude Include="Src\Game Management\TextureManager.hpp" />
+    <ClInclude Include="Src\Utils\utils.hpp" />
+    <ClInclude Include="Src\Utils\Vector2D.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\dirt.png" />
+    <Image Include="assets\grass.png" />
+    <Image Include="assets\Images\Textures\wave slash.png" />
+    <Image Include="assets\player.png" />
+    <Image Include="assets\player2.png" />
+    <Image Include="assets\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libpng16-16.dll" />
+    <None Include="SDL2.dll" />
+    <None Include="SDL2_image.dll" />
+    <None Include="SDL2_ttf.dll" />
+    <None Include="Src\ECS\TileComponent.hpp" />
+    <None Include="zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Src\Gameplay\UserInterface\README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
